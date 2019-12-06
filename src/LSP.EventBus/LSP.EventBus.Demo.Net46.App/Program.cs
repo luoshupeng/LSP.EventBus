@@ -22,6 +22,8 @@ namespace LSP.EventBus.Demo.Net46.App
             });
             EventBusFactory.DefaultEventBus.Publish("new", new PayloadEvent<string>("this is new message"));
 
+            EventBusFactory.DefaultEventBus.Publish("new", new PayloadEvent<string>("this is async message"), TimeSpan.Zero/*TimeSpan.FromSeconds(10)*/);
+
             Console.ReadKey();
         }
 

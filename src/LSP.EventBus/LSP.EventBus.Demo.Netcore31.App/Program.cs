@@ -20,6 +20,8 @@ namespace LSP.EventBus.Demo.Netcore31.App
             });
             EventBusFactory.DefaultEventBus.Publish("new", new PayloadEvent<string>("this is new message"));
 
+            EventBusFactory.DefaultEventBus.Publish("new", new PayloadEvent<string>("this is async message"), TimeSpan.Zero/*TimeSpan.FromSeconds(10)*/);
+
             Console.ReadKey();
         }
         public static void OnIntEvent(PayloadEvent<int> intEvent)
