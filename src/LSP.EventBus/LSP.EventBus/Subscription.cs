@@ -1,8 +1,7 @@
 ﻿using LSP.EventBus.Events;
 using LSP.EventBus.Interfaces;
 using System;
-using System.Collections.Generic;
-using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace LSP.EventBus
@@ -35,11 +34,32 @@ namespace LSP.EventBus
 
             if (dispatchDelayMs > 0)
             {
+#if NET40
+                Task.Factory.StartNew(() =>
+                {
+                    try
+                    {
+                        Thread.Sleep(dispatchDelayMs);
+                    }
+                    catch (Exception e)
+                    {
+                    }
+                    _action.Invoke(eventItem as TEventBase);
+                });
+#else
                 Task.Delay(dispatchDelayMs).ContinueWith(task => _action.Invoke(eventItem as TEventBase));
+#endif
             }
             else
             {
+#if NET40
+                Task.Factory.StartNew(() =>
+                {
+                    _action.Invoke(eventItem as TEventBase);
+                });
+#else
                 Task.Run(() => _action.Invoke(eventItem as TEventBase));
+#endif
             }
         }
     }

@@ -9,9 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LSP.EventBus.Demo.Net45.App
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LSP.EventBus.Demo.Net46.App", "LSP.EventBus.Demo.Net46.App\LSP.EventBus.Demo.Net46.App.csproj", "{CB4345CE-892A-4872-A3B1-AFE462B764C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LSP.EventBus.Demo.Netcore21.App", "LSP.EventBus.Demo.Netcore21.App\LSP.EventBus.Demo.Netcore21.App.csproj", "{3144C451-1B3B-4E2B-99D0-29F3BFFA5D61}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LSP.EventBus.Demo.Netcore21.App", "LSP.EventBus.Demo.Netcore21.App\LSP.EventBus.Demo.Netcore21.App.csproj", "{3144C451-1B3B-4E2B-99D0-29F3BFFA5D61}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LSP.EventBus.Demo.Netcore31.App", "LSP.EventBus.Demo.Netcore31.App\LSP.EventBus.Demo.Netcore31.App.csproj", "{E41C15FA-B55C-4A1E-9889-03AE800C4916}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LSP.EventBus.Demo.Netcore31.App", "LSP.EventBus.Demo.Netcore31.App\LSP.EventBus.Demo.Netcore31.App.csproj", "{E41C15FA-B55C-4A1E-9889-03AE800C4916}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LSP.EventBus.Demo.Net40.App", "LSP.EventBus.Demo.Net40.App\LSP.EventBus.Demo.Net40.App.csproj", "{F064998C-B3F7-4434-968A-78AFCFBC0418}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{E41C15FA-B55C-4A1E-9889-03AE800C4916}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E41C15FA-B55C-4A1E-9889-03AE800C4916}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E41C15FA-B55C-4A1E-9889-03AE800C4916}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F064998C-B3F7-4434-968A-78AFCFBC0418}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F064998C-B3F7-4434-968A-78AFCFBC0418}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F064998C-B3F7-4434-968A-78AFCFBC0418}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F064998C-B3F7-4434-968A-78AFCFBC0418}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

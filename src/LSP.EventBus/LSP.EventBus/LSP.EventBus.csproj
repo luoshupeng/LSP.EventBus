@@ -1,7 +1,7 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net45;net46;netstandard2.0</TargetFrameworks>
+    <TargetFrameworks>net40;net45;net46;netstandard2.0</TargetFrameworks>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>luoshupeng</Authors>
     <Company>luoshupeng</Company>
@@ -11,12 +11,15 @@
     <RepositoryUrl>https://github.com/luoshupeng/LSP.EventBus</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>eventbus  messagebus</PackageTags>
-    <Version>0.0.1</Version>
-    <AssemblyVersion>1.0.1.0</AssemblyVersion>
-    <FileVersion>1.0.1.0</FileVersion>
-    <Title>LSP.EventBus</Title>
+    <Version>1.0.0</Version>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
+    <FileVersion>1.1.0.0</FileVersion>
+    <Title>LSP.EventBus</Title>   
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(TargetFramework)'=='net40'">
+    <DefineConstants>NET40</DefineConstants>
+  </PropertyGroup>
   <PropertyGroup Condition="'$(TargetFramework)'=='net45'">
     <DefineConstants>NET45</DefineConstants>
   </PropertyGroup>
